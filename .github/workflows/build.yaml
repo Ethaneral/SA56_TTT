@@ -1,0 +1,20 @@
+name: building .net application tictactoe
+on:
+  push:
+
+jobs:
+  build_dot_net:
+    runs_on: ubuntu-latest
+    steps:
+    - name: setup dotnet sdk
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    
+    - name: checkout your source code
+    
+    #do a ls -l to check before the build
+    - name: list your repo to check before building
+      run: ls -l\
+
+    #- run: dotnet build <my project>
